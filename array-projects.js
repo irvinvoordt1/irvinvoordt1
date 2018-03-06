@@ -11,3 +11,21 @@ flavors[0]= "Vanilla ChocoChip";
 var products = ["hadlebars", "mobile phones", "pens", "pencils" ];
 var lastProductmade = products.length-1;
 var recentproductmade= products[lastProductmade];
+  
+
+function makeAPhrase (){
+ var word1 = ["Waz Up", "Sucky Sucky", "Chopy Chopy", "Vada Ving", "Vada Vunm"]
+ var word2 = ["Trumper", "Out there!", "MOSt folf", "Wolf of Wall Street", "lambo" ];
+  var word3 = [ "Porche", "Samsung", "Motorola", "Wolfagangpck", " DOODOO DID"];
+  
+  var rand1 = Math.floor (Math.random() * word1.length);
+  var rand2 = Math.floor (Math.random() * word2.length);
+  var rand3 = Math.floor (Math.random() * word3.length);
+  
+  var phraseOfTheDay = word1[rand1] + " " + word2[rand2] + " " + word3[rand3];
+  
+  alert(phraseOfTheDay);
+  console.log(phraseOfTheDay)
+}
+makeAPhrase();
+
