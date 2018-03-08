@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <title> Bubble Scores</title>
+  <meta charset = "utf-8">
+  <script>
+  alert("Its an honor to bring you Bubble test !");
+  var scores =[60, 50, 60, 58, 54, 54, 58, 50,
+     52, 54, 48, 69, 34, 55, 51, 52, 44, 51,
+      69, 64, 66, 55, 52, 61, 46, 31, 57,
+       52, 44, 18, 41,  53, 55, 61, 51, 44];
+console.log("Bubbles tests completed : " +  scores.length);
+    var highScore = 0;
+    var outPut;
+
+    for (var index = 0; index < scores.length; index++){
+      outPut = "Bubbles Solution # : " + index +
+       " with the output of " + scores[index] +" total Bubbles! ";
+
+    console.log(outPut);
+
+    if(scores[index] > highScore){
+      highScore = scores[index];
+    }
+}
+
+console.log("Bubbles tests completed : " +  scores.length);
+console.log("Highest Score: " + highScore );
+
+
+var bestSolutions = [];
+for (index = 0; index < scores.length; index++) {
+if (scores[index] == highScore){
+  bestSolutions.push(index);
+}
+}
+console.log("Best Solutions : " + bestSolutions );
+
+</script>
+</head>
+<body>
+
+<h1> Bubbles Test </h1>
+
+<p> Bubble Solution Scores =[60, 50, 60, 58, 54, 54, 58, 50,
+   52, 54, 48, 69, 34, 55, 51, 52, 44, 51,
+    69, 64, 66, 55, 52, 61, 46, 31, 57,
+     52, 44, 18, 41,  53, 55, 61, 51, 44];</p>
+<br>
+<br>
+
+     <h2>
+Bubbles tests completed : 36 </h2>
+<h2>Highest Score: 69</h2>
+<h3>Best Bubble Solutions : 11 & 18 </h3>
+
+</body>
+</html>
