@@ -28,3 +28,14 @@ print(contains)
 
 y = "u cre" in ice_cream
 print(y)
+#add The len() function is used to count how many characters a string contains. 
+
+Get the first half of the string stored in the variable phrase. 
+# understaing \ and breaking the "" or ''
+dont_worry = "Don't worry about apostrophes"
+print(dont_worry)
+print("\"Sweet\" is an ice-cream")
+print('The name of the ice-cream is "Sweet\'n\'Tasty"')
+
+q = len(dont_worry)
+print(q)
